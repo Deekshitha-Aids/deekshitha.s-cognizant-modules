@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="site-title">Student Portal</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Grades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="hero">
+            <h2>Welcome to the Student Portal</h2>
+            <p>Manage your courses and view notifications.</p>
+        </section>
+
+
+        <section id="courses">
+
+            <h2>Courses</h2>
+
+            <p id="course-loading">
+                Loading courses...
+            </p>
+
+            <div class="course-grid"></div>
+
+            <p id="total-credits"></p>
+
+        </section>
+
+
+        <section id="notifications">
+
+            <h2>Notifications</h2>
+
+            <div id="spinner">
+                Loading notifications...
+            </div>
+
+            <div id="notification-list"></div>
+
+            <div id="error-message"></div>
+
+            <button id="retry-btn" style="display:none;">
+                Retry
+            </button>
+
+        </section>
+
+
+        <section>
+
+            <h2>Search Posts</h2>
+
+            <div id="user-posts"></div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <p>
+            &copy; 2026 Student Portal
+        </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
